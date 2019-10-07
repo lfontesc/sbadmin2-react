@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './Pages/Sidebar';
+import Main from './Pages/Main';
+import Scrolltopbar from './Pages/Scrolltopbar'
+import LogoutModal from './Pages/LogoutModal'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div id="wrapper">
+      <Sidebar />
+      <Main />
+
+    </div>
+      <Scrolltopbar />
+      <LogoutModal />
     </div>
   );
 }
